@@ -1,0 +1,15 @@
+<div class="card text-center py-3" [routerLink]="['/product/',product.id]"*ngIf="product">
+  <!-- <img src="" alt="" class="bd-placeholder-img card-img-top" width="100%"> -->
+  <div class="img mx-auto"></div>
+  <div class="card-body">
+    <p class="card-text"> {{ product.name }} </p>
+    <!-- <p class="card-text"> {{ product.category }} </p>
+    <p class="card-text"> {{ product.quantity }} </p> -->
+    <p class="card-text"> {{ product.price | currency:'BRL':true}} </p>
+
+    <!-- <div class="btn-group row">
+      <button class="btn btn-dark my-2">COMPRAR</button>
+      <button class="btn btn-secondary">DETALHES</button>
+    </div> -->
+  </div>
+</div>

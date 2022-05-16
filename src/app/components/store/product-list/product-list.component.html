@@ -1,0 +1,18 @@
+<app-search #search></app-search>
+<section class="d-flex justify-content-between">
+<div class="col-3">
+  <app-filters #filter (click)="search.active = false"></app-filters>
+</div>
+<div class="col-9 row row-cols-3 g-4" *ngIf="search.active === true || filter.filteredProducts.length == 0; else filterByPrice">
+  <div *ngFor="let product of search.filteredProducts">
+    <app-product-item [product]="product"></app-product-item>
+  </div>
+</div>
+<ng-template #filterByPrice>
+  <div class="col-9 row row-cols-3 g-4">
+  <div *ngFor="let product of filter.filteredProducts">
+      <app-product-item [product]="product"></app-product-item>
+    </div>
+  </div>
+</ng-template>
+</section>

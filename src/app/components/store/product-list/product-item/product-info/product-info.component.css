@@ -1,0 +1,31 @@
+.img{
+  width: 300px;
+  height: 300px;
+  background-color: black;
+}
+
+.card{
+  height: 400px;
+}
+
+.card-body{
+  height: 300px;
+}
+
+
+.form-group{
+  margin-top: 3rem;
+}
+
+input{
+  width: 4rem;
+  border-radius: 10px;
+  border: 1px solid #999;
+  padding: 5px 20px;
+}
+
+input:focus, select:focus, btn:focus{
+  border-style: 0 none;
+  box-shadow: 0;
+  outline: 0;
+}

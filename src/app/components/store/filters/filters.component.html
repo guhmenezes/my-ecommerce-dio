@@ -1,0 +1,22 @@
+<div class="card filter">
+
+  <div class="card-header">Filtros</div>
+  <div class="card-body">
+    <form #formFilter>
+      <div class="form-group">
+        <label for="from">De</label>
+        <input autocomplete="off" type="text" id="from" class="form-control" maxlength="12"
+        placeholder="R$" prefix="R$ " suffix=",00" mask="separator" thousandSeparator="."
+        #from>
+      </div>
+      <div class="form-group">
+        <label for="to">Até</label>
+        <input autocomplete="off" type="text" id="to" class="form-control" 
+        maxlength="12" placeholder="R$" prefix="R$ " suffix=",00" mask="separator" thousandSeparator="."
+        #to>
+      </div>
+      <button class="btn d-block btn-primary btn-sm mt-3 mx-auto col-6" (click)="filter(from.value,to.value)">Filtrar</button>
+    </form>
+  </div>
+
+</div>

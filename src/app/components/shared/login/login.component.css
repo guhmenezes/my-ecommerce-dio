@@ -1,0 +1,9 @@
+.sign-in{
+  border: solid 1px #999;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px #999;
+}
+
+.form-group{
+  min-height: 70vh;
+}

@@ -1,0 +1,32 @@
+.search{
+  width: 400px;
+  border: 1px solid #999;
+  border-radius: 20px;
+  padding: 5px 20px;
+}
+
+.searchbox{
+  position: relative;
+}
+
+.search-btn{
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: 1rem;
+  top: .6rem;
+}
+
+.search-icon{
+  background-image: url(../../../../../assets/icons/lupa.png);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  user-select: none;
+}
+
+input:focus, select:focus, btn:focus{
+  border-style: 0 none;
+  box-shadow: 0;
+  outline: 0;
+}
